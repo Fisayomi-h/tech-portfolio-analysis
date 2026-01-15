@@ -76,8 +76,10 @@ These stocks represent different growth, volatility, and correlation profiles wi
 🔹 Performance Metrics
 
 Daily Returns (stock-level)
+<img width="1130" height="365" alt="Daily Returns Tech Portfolio Analysis" src="https://github.com/user-attachments/assets/417fb2e7-070c-41c4-8dc0-cda887ceef4c" />
 
 Cumulative Returns
+<img width="1130" height="433" alt="Cummulative returns" src="https://github.com/user-attachments/assets/00f30e93-d1c5-4d85-898e-5cf8087e8ea6" />
 
 Portfolio Daily Returns
 
@@ -91,6 +93,7 @@ Annualized Volatility
 Maximum Drawdown
 
 Correlation Matrix
+<img width="781" height="475" alt="Stock Correlation Matrix" src="https://github.com/user-attachments/assets/c6ce9b0f-f742-4981-91ca-3e97faba98ca" />
 
 Rolling (20-day) Volatility
 
@@ -112,11 +115,16 @@ Identification of top risk drivers
 🔹 Predictive / Forward-Looking Metrics
 
 20-day Moving Average
+<img width="906" height="499" alt="Moving Averages" src="https://github.com/user-attachments/assets/47b20193-a023-4f52-a691-645249a80299" />
 
 50-day Moving Average
 
 Rolling Volatility Trends
+<img width="904" height="497" alt="Screenshot 2026-01-15 102624" src="https://github.com/user-attachments/assets/b006a4a3-b70f-48f6-bc55-7ca4aafc79b8" />
 
+<img width="904" height="497" alt="Screenshot 2026-01-15 102713" src="https://github.com/user-attachments/assets/e47d5f5d-1776-4125-ac1e-c77ea56fd277" />
+
+<img width="903" height="500" alt="Screenshot 2026-01-15 102757" src="https://github.com/user-attachments/assets/d74ebd35-c720-432a-b481-104f34d58b5b" />
 
 📈 Visualizations & Key Insights
 
