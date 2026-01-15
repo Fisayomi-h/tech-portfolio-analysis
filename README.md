@@ -160,7 +160,7 @@ A few stocks contribute disproportionately to portfolio risk
 Portfolio risk is not evenly distributed despite equal weights
 
 
-5️ PREDICTIVE SIGNALS
+ PREDICTIVE SIGNALS
 
 Moving averages help identify:
 
