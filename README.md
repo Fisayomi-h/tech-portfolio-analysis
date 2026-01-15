@@ -1,8 +1,9 @@
-# Tech-portfolio-analysis
+# Tech-Portfolio-Analysis
 Portfolio analysis of major tech stocks with performance, risk, and predictive metrics using Python.
 
 
   PROJECT OVERVIEW
+  
 This project analyzes the performance, risk exposure, and risk-adjusted returns of a technology-focused equity portfolio using historical market data.
 The goal is to demonstrate how data analysis can support smarter investment, diversification, and rebalancing decisions.
 
@@ -10,6 +11,7 @@ The analysis is implemented entirely in Python (Jupyter Notebook) and focuses on
 
 
  PROBLEM STATEMENT
+ 
 As an investor holding multiple large-cap technology stocks:
 
 How can we evaluate portfolio performance, risk exposure, and risk-adjusted returns over time in order to make informed allocation and rebalancing decisions?
@@ -49,7 +51,7 @@ stock_symbol
 adj_close
 
 
- Selected Stocks
+ SELECTED STOCKS
 
 To maintain clarity and realism, the portfolio focuses on 7 major technology leaders:
 
@@ -97,6 +99,7 @@ Rolling (20-day) Volatility
 
 Sharpe Ratio 
 
+
 🔹 Portfolio Structure
 
 Equal Weight Allocation
@@ -104,6 +107,7 @@ Equal Weight Allocation
 Risk Contribution (%) per stock
 
 Identification of top risk drivers
+
 
 🔹 Predictive / Forward-Looking Metrics
 
@@ -201,6 +205,7 @@ Risk reduction during high-volatility periods
 
 
  TOOLS & TCHNOLOGIES
+ 
 Python
 
 Pandas & NumPy
