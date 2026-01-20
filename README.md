@@ -1,46 +1,29 @@
 # Tech-Portfolio-Analysis
-Portfolio analysis of major tech stocks with performance, risk, and predictive metrics using Python.
 
 
-  PROJECT OVERVIEW
-  
-This project analyzes the performance, risk exposure, and risk-adjusted returns of a technology-focused equity portfolio using historical market data.
-The goal is to demonstrate how data analysis can support smarter investment, diversification, and rebalancing decisions.
+Tech Portfolio Optimization: From Risk-Heavy to Risk-Adjusted Growth
 
-The analysis is implemented entirely in Python (Jupyter Notebook) and focuses on real-world portfolio evaluation techniques used by investment firms, fintech companies, and asset managers.
+  SITUATION
 
+The "Big Tech" sector often provides high returns, but it is prone to extreme volatility and deep drawdowns. My initial analysis of an equal-weighted portfolio (AAPL, AMZN, GOOGL, META, MSFT, NVDA, NFLX) yielded a strong 29.21% annualized return but was coupled with a dangerous -49.09% Maximum Drawdown. For most investors, a nearly 50% loss in capital is unacceptable, regardless of the upside.
 
- PROBLEM STATEMENT
- 
-As an investor holding multiple large-cap technology stocks:
+ TASK
 
-How can we evaluate portfolio performance, risk exposure, and risk-adjusted returns over time in order to make informed allocation and rebalancing decisions?
+My goal was to move from a Descriptive analysis (what happened) to a Prescriptive strategy (how to fix it). I aimed to:
 
+    Identify the specific assets contributing to disproportionate risk.
 
- OBJECTIVES
- 
-Primary Objective
-Evaluate the performance and risk characteristics of a technology equity portfolio using historical stock price data.
+    Mathematically optimize the portfolio weights to maximize the Sharpe Ratio.
 
-Specific Objectives
-Measure individual stock performance
+    Reduce the Maximum Drawdown to protect capital while maintaining competitive growth.
 
-Assess portfolio-level returns using an equal-weighted strategy
-
-Evaluate portfolio risk and downside exposure
-
-Analyze risk-adjusted performance
-
-Identify key drivers of portfolio risk
-
-Support data-driven investment decisions
-
-
+    
  DATASET SOURCE
 
 Historical adjusted close prices of U.S. large-cap technology stocks
 
 Dataset stored locally as: Big_Tech_Dataset.xlsx
+
 
 Structure includes:
 
@@ -72,7 +55,30 @@ NFLX (Netflix)
 These stocks represent different growth, volatility, and correlation profiles within the tech sector.
 
  KPIs & Metrics Analyzed
- 
+
+
+ TOOLS & TECHNOLOGIES
+
+    Python (Core Engine): Used for data manipulation and matrix mathematics.
+
+    Pandas & NumPy: For financial time-series analysis and return calculations.
+
+    Matplotlib & Seaborn: For visualizing the Efficient Frontier and Stock Correlations.
+
+    SciPy/Monte Carlo Simulation: To run 2,000+ portfolio iterations to identify the optimal "recipe."
+
+
+ ACTION
+
+    Data Cleaning: Pivoted raw transactional data into a time-series format and calculated daily percentage changes.
+
+    Risk Assessment: Conducted a correlation analysis to identify how these tech giants move in tandem.
+
+    Efficient Frontier Simulation: Developed a Monte Carlo simulation to generate 2,000 random weight combinations, calculating the Return, Volatility, and Sharpe Ratio for each.
+
+    Optimization: Identified the "Maximum Sharpe Ratio" portfolio—the specific point on the frontier where the return-per-unit-of-risk is at its peak.
+
+    
 🔹 Performance Metrics
 
 Daily Returns (stock-level)
@@ -93,6 +99,11 @@ Annualized Volatility
 Maximum Drawdown
 
 Correlation Matrix
+
+What it shows: A heatmap of how closely each stock's price moves in relation to the others (scaled from -1 to +1).
+
+The Insight: High positive correlations (near +1.0) across the Big Tech sector mean that these stocks often fall at the same time. This explains the -49% drawdown; when one giant stumbled, they all did.
+
 <img width="781" height="475" alt="Stock Correlation Matrix" src="https://github.com/user-attachments/assets/c6ce9b0f-f742-4981-91ca-3e97faba98ca" />
 
 Rolling (20-day) Volatility
@@ -114,6 +125,9 @@ Identification of top risk drivers
 
 🔹 Predictive / Forward-Looking Metrics
 
+What it shows: The average price of an asset over the last 20 trading days, smoothing out daily "noise."
+
+The Insight: When the actual price falls below the 20-day MA, it indicates a loss of short-term momentum.
 20-day Moving Average
 <img width="906" height="499" alt="Moving Averages" src="https://github.com/user-attachments/assets/47b20193-a023-4f52-a691-645249a80299" />
 
@@ -180,59 +194,45 @@ Maximum Drawdown	~-49%
 Sharpe Ratio	~0.96
 Portfolio Nature	High return, high risk
 
- CONCLUSIONS & RECOMMENDATIONS
+By shifting from an Equal-Weight strategy to a Mathematically Optimized strategy, I achieved the following:
+
+Metric,              Equal-Weight (Initial),  Optimized (Final),        Impact
+Annualized Return,     29.21%,                   25.10%,            Sustained High Growth
+Annualized Volatility, 26.22%,                   18.50%,           ~30% Risk Reduction
+Sharpe Ratio,          0.96,                     1.14,18.7%         Efficiency Gain
+Max Drawdown,          -49.09%,                  -28.40%,           Saved ~21% of Portfolio Value
+<img width="963" height="339" alt="Screenshot 2026-01-20 162911" src="https://github.com/user-attachments/assets/c159a2ec-8748-4bab-ae11-255ac7ee06bb" />
+
+ INSIGHTS: What the Data Revealed
  
  Performance vs Risk
 The portfolio delivers strong returns, but at the cost of high volatility.
 
 Risk-adjusted performance (Sharpe Ratio < 1) suggests returns may not fully compensate for risk.
 
- Concentration Risk
-A small number of stocks drive most of the risk.
+ The NVDA Risk-Reward Paradox: While NVDA was the primary engine of growth (contributing heavily to the 29.21% return), it was also the primary driver of volatility. In a team-based portfolio context, its raw performance was "punished" by the optimizer to protect the overall floor of the investment.
 
-Equal weighting does not guarantee equal risk exposure.
+ The Inefficiency of Equal Weighting: My analysis proved that an equal-weight approach (20% per stock) ignores the "risk-contribution" of individual assets. While simple to implement, this strategy resulted in a -49.09% drawdown, indicating that the portfolio was unintentionally over-exposed to the most volatile assets.
 
- DIVERSIFICATION STRATEGY
+ Diversification Drivers vs. Dead Weight: The simulation identified NFLX (22.78%) and MSFT (10.44%) as high-efficiency diversifiers. Conversely, META (0.27%) was identified as "dead weight," where the risk of holding the stock did not justify its expected return compared to other available tech assets.
 
-Consider adding:
+The Efficiency Frontier Gap: The "Equal Weight" portfolio sat deep inside the Monte Carlo cloud, rather than on the edge. This gap represents uncompensated risk, meaning the investor was taking on stress that wasn't producing additional profit.
+<img width="905" height="552" alt="Screenshot 2026-01-20 162957" src="https://github.com/user-attachments/assets/833ba83a-01e4-4f3c-b810-e8ad0f8f48d5" />
 
-Non-tech sectors
+<img width="1001" height="528" alt="Portfolio Optimization" src="https://github.com/user-attachments/assets/e5dbe01e-c596-419a-a6bf-93a62d4c2060" />
 
-Defensive or low-correlation assets
-
-This can improve drawdowns and risk-adjusted returns.
-
-
- REBALANCING INSIGHTS
-
-Rolling volatility and moving averages can inform:
-
-Periodic rebalancing
-
-Risk reduction during high-volatility periods
-
-
- TOOLS & TCHNOLOGIES
+ RECOMMENDATIONS: Strategic Action Plan
  
-Python
 
-Pandas & NumPy
+Immediate Rebalancing to Maximum Sharpe Weights: I recommend a tactical shift from equal weights to the Optimized Recipe (NVDA 45%, NFLX 22%, MSFT 10%). This re-weighting is projected to improve the Sharpe Ratio by 18.7%, providing a superior risk-adjusted return profile.
 
-Matplotlib & Seaborn
+Implement a Risk-Parity Framework: Stop allocating capital based on dollar amounts and start allocating based on volatility contribution. High-beta stocks like NVDA should be capped during high-volatility regimes to prevent the -49% drawdown observed in Phase 1.
 
-Jupyter Notebook
+Adopt Tactical Trend Following: Utilize the 20-day and 50-day Moving Average crossover strategy on core holdings like AAPL. When the short-term average falls below the long-term average (a "Death Cross"), the portfolio should rotate into cash or defensive ETFs to preserve capital.
 
+Dynamic Exit for Low-Efficiency Assets: Based on the 0.27% allocation recommendation for META, I recommend a complete divestment from underperforming high-volatility assets to free up liquidity for higher-conviction, more efficient growth drivers like MSFT or GOOGL.
 
- FINAL NOTE
+Cross-Sector Hedging: To break the high correlation within the "Big Tech" cluster, the next phase of this strategy should include 0% to 15% allocation in non-correlated sectors (e.g., Treasury bonds or defensive Consumer Staples) to further flatten the volatility curve.
 
-This project demonstrates how data analysis translates into investment insight, bridging the gap between raw market data and decision-making.
-
-It is designed to reflect the type of analysis used in:
-
-Asset Management
-
-Fintech
-
-Investment Research
 
 Portfolio Analytics roles
