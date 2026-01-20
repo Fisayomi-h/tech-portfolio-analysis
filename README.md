@@ -5,7 +5,7 @@ The Big Tech sector often provides high returns, but it is prone to extreme vola
 
 ##  TASK
 My goal was to move from a **Descriptive** analysis (what happened) to a **Prescriptive** strategy (how to fix it). I aimed to:
-1. **Identify the "Beta Penalty":** Pinpoint specific assets contributing to disproportionate risk.
+1. ** Pinpoint specific assets contributing to disproportionate risk.
 2. **Mathematically Optimize:** Rebalance weights to maximize the **Sharpe Ratio** using Monte Carlo simulations.
 3. **Protect Capital:** Reduce the Maximum Drawdown to ensure capital preservation while maintaining competitive growth.
 
@@ -28,7 +28,7 @@ The portfolio focuses on 7 major technology leaders with diverse growth and vola
 1. **Data Engineering:** Pivoted raw data into a time-series format and calculated daily percentage changes.
 2. **Risk Assessment:** Conducted a correlation analysis to identify how these tech giants move in tandem.
 3. **Efficient Frontier Simulation:** Developed a Monte Carlo simulation to generate 2,000 random weight combinations.
-4. **Optimization:** Identified the **Maximum Sharpe Ratio** portfolio—the "North Star" where return-per-unit-of-risk is at its peak.
+4. **Optimization:** Identified the **Maximum Sharpe Ratio** portfolio, the "North Star" where return-per-unit-of-risk is at its peak.
 
 ---
 
@@ -54,7 +54,7 @@ The portfolio focuses on 7 major technology leaders with diverse growth and vola
 ##  KEY INSIGHTS
 
 ### 1. What led to the 0.96 Sharpe Ratio?
-* **The "Beta" Penalty:** The initial equal-weighted portfolio carried a high Beta (market sensitivity). Even with high gains, the "quality" of return was lower because the risk was uncompensated.
+* **The "Beta" Penalty:** The initial equal-weighted portfolio carried a high Beta (market sensitivity). Even with high gains, the quality of return was lower because the risk was uncompensated.
 * **Uncompensated Volatility:** A Sharpe Ratio < 1.0 means we earned less than 1% of "excess return" for every 1% of risk taken. It suggests the portfolio was not perfectly diversified.
 * **The Drawdown Impact:** The massive -49.09% drawdown increased the standard deviation (the denominator of the Sharpe formula), mathematically lowering the score.
 
@@ -64,7 +64,7 @@ The portfolio focuses on 7 major technology leaders with diverse growth and vola
 * **Moderates:** META and AMZN show moderate volatility, offering slight diversification benefits.
 
 ### 3. The Efficiency Frontier Gap
-The Equal Weight portfolio sat deep inside the Monte Carlo "cloud." This represents **uncompensated risk**—the investor was taking on stress that wasn't producing additional profit. By moving to the **Frontier** (the top-left edge), we minimize risk for the highest possible return.
+The Equal Weight portfolio sat deep inside the Monte Carlo "cloud." This represents **uncompensated risk** the investor was taking on stress that wasn't producing additional profit. By moving to the **Frontier** (the top-left edge), we minimize risk for the highest possible return.
 
 ---
 
@@ -94,4 +94,4 @@ The Equal Weight portfolio sat deep inside the Monte Carlo "cloud." This represe
 ---
 
 ##  CONCLUSION
-This project proves that **Data Analysis + Economic Logic** is the best defense for capital. By sacrificing a small amount of raw return, I was able to significantly improve risk-adjusted performance and capital preservation, moving from a reactive strategy to a **prescriptive, professional-grade investment workflow.**
+This project proves that **Data Analysis + Economic Logic** is the best defense for capital. By sacrificing a small amount of raw return, I was able to significantly improve risk-adjusted performance and capital preservation, moving from a reactive strategy to a **prescriptive investment workflow.**
