@@ -1,30 +1,30 @@
-# 📈 Tech-Portfolio-Analysis: From Risk-Heavy to Risk-Adjusted Growth
+#  Tech-Portfolio-Analysis: From Risk-Heavy to Risk-Adjusted Growth
 
-## 📌 SITUATION
+##  SITUATION
 The Big Tech sector often provides high returns, but it is prone to extreme volatility and deep drawdowns. My initial analysis of an equal-weighted portfolio (**AAPL, AMZN, GOOGL, META, MSFT, NVDA, NFLX**) yielded a strong **29.21% annualized return** but was coupled with a dangerous **-49.09% Maximum Drawdown**. For most investors, a nearly 50% loss in capital is unacceptable, regardless of the upside.
 
-## 🎯 TASK
+##  TASK
 My goal was to move from a **Descriptive** analysis (what happened) to a **Prescriptive** strategy (how to fix it). I aimed to:
 1. **Identify the "Beta Penalty":** Pinpoint specific assets contributing to disproportionate risk.
 2. **Mathematically Optimize:** Rebalance weights to maximize the **Sharpe Ratio** using Monte Carlo simulations.
 3. **Protect Capital:** Reduce the Maximum Drawdown to ensure capital preservation while maintaining competitive growth.
 
-## 📂 DATASET SOURCE
+##  DATASET SOURCE
 * **Source:** Historical adjusted close prices of U.S. large-cap technology stocks.
 * **Storage:** Locally stored as `Big_Tech_Dataset.xlsx`.
 * **Structure:** Includes `date`, `stock_symbol`, and `adj_close`.
 
-## 🍎 SELECTED STOCKS
+##  SELECTED STOCKS
 The portfolio focuses on 7 major technology leaders with diverse growth and volatility profiles:
 **AAPL** (Apple), **AMZN** (Amazon), **GOOGL** (Alphabet), **META** (Meta Platforms), **MSFT** (Microsoft), **NVDA** (NVIDIA), **NFLX** (Netflix).
 
-## 🛠️ TOOLS & TECHNOLOGIES
+##  TOOLS & TECHNOLOGIES
 1. **Python (Core Engine):** Data manipulation and matrix mathematics.
 2. **Pandas & NumPy:** Financial time-series analysis and return calculations.
 3. **Matplotlib & Seaborn:** Visualizing the Efficient Frontier and Stock Correlations.
 4. **SciPy/Monte Carlo Simulation:** Running 2,000+ portfolio iterations to identify the optimal "Frontier."
 
-## 🚀 ACTION
+##  ACTION
 1. **Data Engineering:** Pivoted raw data into a time-series format and calculated daily percentage changes.
 2. **Risk Assessment:** Conducted a correlation analysis to identify how these tech giants move in tandem.
 3. **Efficient Frontier Simulation:** Developed a Monte Carlo simulation to generate 2,000 random weight combinations.
@@ -32,7 +32,7 @@ The portfolio focuses on 7 major technology leaders with diverse growth and vola
 
 ---
 
-## 📊 PERFORMANCE & RISK METRICS
+##  PERFORMANCE & RISK METRICS
 
 ### 🔹 Performance Visualization
 1. **Daily Returns (Stock-level)**
@@ -51,7 +51,7 @@ The portfolio focuses on 7 major technology leaders with diverse growth and vola
 
 ---
 
-## 💡 KEY INSIGHTS
+##  KEY INSIGHTS
 
 ### 1. What led to the 0.96 Sharpe Ratio?
 * **The "Beta" Penalty:** The initial equal-weighted portfolio carried a high Beta (market sensitivity). Even with high gains, the "quality" of return was lower because the risk was uncompensated.
@@ -68,7 +68,7 @@ The Equal Weight portfolio sat deep inside the Monte Carlo "cloud." This represe
 
 ---
 
-## 🏆 KEY RESULTS SUMMARY
+##  KEY RESULTS SUMMARY
 
 | Metric | Equal-Weight (Initial) | Optimized (Final) | Business Impact |
 | :--- | :--- | :--- | :--- |
@@ -84,7 +84,7 @@ The Equal Weight portfolio sat deep inside the Monte Carlo "cloud." This represe
 
 ---
 
-## 🎯 RECOMMENDATIONS: STRATEGIC ACTION PLAN
+##  RECOMMENDATIONS: STRATEGIC ACTION PLAN
 
 1. **Immediate Rebalancing to Risk-Parity Weights:** Move away from equal dollar amounts. I recommend trimming high-beta stocks (NVDA) and increasing weights in lower-volatility anchors like **MSFT** or **AAPL** to protect against the 49% drawdown risk.
 2. **Adopt Tactical Trend Following:** Utilize the 20/50-day Moving Average crossovers. When a "Death Cross" occurs, the portfolio should rotate into cash or defensive ETFs to preserve capital.
@@ -93,5 +93,5 @@ The Equal Weight portfolio sat deep inside the Monte Carlo "cloud." This represe
 
 ---
 
-## 📜 CONCLUSION
+##  CONCLUSION
 This project proves that **Data Analysis + Economic Logic** is the best defense for capital. By sacrificing a small amount of raw return, I was able to significantly improve risk-adjusted performance and capital preservation, moving from a reactive strategy to a **prescriptive, professional-grade investment workflow.**
