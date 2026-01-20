@@ -92,6 +92,10 @@ These stocks represent different growth, volatility, and correlation profiles wi
 Annualized Volatility and Maximum Drawdown
 
 
+VISUALIZATION
+
+
+
 Correlation Matrix
 
 What it shows: A heatmap of how closely each stock's price moves in relation to the others (scaled from -1 to +1).
@@ -105,7 +109,7 @@ The Insight: High positive correlations (near +1.0) across the Big Tech sector m
 
 🔹 PREDICTIVE / FORWARD-LOOKING METRICS
 
-What it shows: The average price of an asset over the last 20 trading days, smoothing out daily "noise."
+What it shows: The average price of an asset over the last 20 trading days, smoothing out daily noise.
 
 The Insight: When the actual price falls below the 20-day MA, it indicates a loss of short-term momentum.
 20-day Moving Average
@@ -128,27 +132,25 @@ Chart 3 Insight: META and AMZN show moderate volatility, adding diversification 
 <img width="903" height="500" alt="Screenshot 2026-01-15 102757" src="https://github.com/user-attachments/assets/d74ebd35-c720-432a-b481-104f34d58b5b" />
 
 
-📈 Visualizations & Key Insights
+KEY INSIGHTS
 
- PORTFOLIO GROWTH
+A. PORTFOLIO GROWTH
 
 The portfolio shows long-term growth, but with significant drawdowns during market stress periods.
 
 
 
- RISK & DRAWDOWNS
+B. RISK & DRAWDOWNS
 
 Maximum drawdown highlights downside risk exposure and Portfolio volatility confirms sensitivity to market shocks.
 
 
- DIVERSIFICATION INSIGHTS
+C. DIVERSIFICATION INSIGHTS
 
-Correlation heatmap shows:
-
-Strong correlations among some tech stocks and Partial diversification benefits, but not complete risk insulation
+Correlation heatmap shows Strong correlations among some tech stocks and Partial diversification benefits, but not complete risk insulation
 
 
- RISK DRIVERS
+D. RISK DRIVERS
 
 Risk contribution analysis reveals that:
 
@@ -210,15 +212,15 @@ Risk-adjusted performance (Sharpe Ratio < 1) suggests returns may not fully comp
  RECOMMENDATIONS: Strategic Action Plan
  
 
-Immediate Rebalancing to Maximum Sharpe Weights: I recommend a tactical shift from equal weights to the Optimized Recipe (NVDA 45%, NFLX 22%, MSFT 10%). This re-weighting is projected to improve the Sharpe Ratio by 18.7%, providing a superior risk-adjusted return profile.
+1. Immediate Rebalancing to Maximum Sharpe Weights: I recommend a tactical shift from equal weights to the Optimized Recipe (NVDA 45%, NFLX 22%, MSFT 10%). This re-weighting is projected to improve the Sharpe Ratio by 18.7%, providing a superior risk-adjusted return profile.
 
-Implement a Risk-Parity Framework: Stop allocating capital based on dollar amounts and start allocating based on volatility contribution. High-beta stocks like NVDA should be capped during high-volatility regimes to prevent the -49% drawdown observed in Phase 1.
+2. Implement a Risk-Parity Framework: Stop allocating capital based on dollar amounts and start allocating based on volatility contribution. High-beta stocks like NVDA should be capped during high-volatility regimes to prevent the -49% drawdown observed in Phase 1.
 
-Adopt Tactical Trend Following: Utilize the 20-day and 50-day Moving Average crossover strategy on core holdings like AAPL. When the short-term average falls below the long-term average, the portfolio should rotate into cash or defensive ETFs to preserve capital.
+3. Adopt Tactical Trend Following: Utilize the 20-day and 50-day Moving Average crossover strategy on core holdings like AAPL. When the short-term average falls below the long-term average, the portfolio should rotate into cash or defensive ETFs to preserve capital.
 
-Dynamic Exit for Low-Efficiency Assets: Based on the 0.27% allocation recommendation for META, I recommend a complete divestment from underperforming high-volatility assets to free up liquidity for higher-conviction, more efficient growth drivers like MSFT or GOOGL.
+4. Dynamic Exit for Low-Efficiency Assets: Based on the 0.27% allocation recommendation for META, I recommend a complete divestment from underperforming high-volatility assets to free up liquidity for higher-conviction, more efficient growth drivers like MSFT or GOOGL.
 
-Cross-Sector Hedging: To break the high correlation within the "Big Tech" cluster, the next phase of this strategy should include 0% to 15% allocation in non-correlated sectors (e.g., Treasury bonds or defensive Consumer Staples) to further flatten the volatility curve.
+5. Cross-Sector Hedging: To break the high correlation within the "Big Tech" cluster, the next phase of this strategy should include 0% to 15% allocation in non-correlated sectors (e.g., Treasury bonds or defensive Consumer Staples) to further flatten the volatility curve.
 
 
 
