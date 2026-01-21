@@ -71,12 +71,13 @@ The Equal Weight portfolio sat deep inside the Monte Carlo "cloud." This represe
 
 ##  KEY RESULTS SUMMARY
 
+
 | Metric | Equal-Weight (Initial) | Optimized (Final) | Business Impact |
 | :--- | :--- | :--- | :--- |
 | **Annualized Return** | 29.21% | 25.10% | Sustained High Growth |
 | **Annualized Volatility** | 26.22% | **18.50%** | **~30% Risk Reduction** |
 | **Sharpe Ratio** | 0.96 | **1.14** | **18.7% Efficiency Gain** |
-| **Max Drawdown** | -49.09% | **-28.40%** | **Saved 21% of Capital** |
+| **Max Drawdown** | -49.09% | **-28.40%** | **42% Loss Protection (Saved 21% Portfolio Value)** |
 
 **Optimized Asset Allocation (The Recipe):**
 * **NVDA:** 45.09% | **NFLX:** 22.78% | **MSFT:** 10.44% | **META:** 0.27% (Divestment Target)
