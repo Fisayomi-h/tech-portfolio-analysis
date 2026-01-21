@@ -27,8 +27,9 @@ The portfolio focuses on 7 major technology leaders with diverse growth and vola
 ##  ACTION
 1. **Data Engineering:** Pivoted raw data into a time-series format and calculated daily percentage changes.
 2. **Risk Assessment:** Conducted a correlation analysis to identify how these tech giants move in tandem.
-3. **Efficient Frontier Simulation:** Developed a Monte Carlo simulation to generate 2,000 random weight combinations.
-4. **Optimization:** Identified the **Maximum Sharpe Ratio** portfolio, the "North Star" where return-per-unit-of-risk is at its peak.
+3. **Trend Signal Development (Predictive): Integrated 20-day and 50-day Moving Averages to identify Regime Shifts. I utilized these as predictive lead indicators to determine when momentum was exhausting and a defensive pivot was required.
+4. **Efficient Frontier Simulation:** Developed a Monte Carlo simulation to generate 2,000 random weight combinations.
+5. **Optimization:** Identified the **Maximum Sharpe Ratio** portfolio, the "North Star" where return-per-unit-of-risk is at its peak.
 
 ---
 
