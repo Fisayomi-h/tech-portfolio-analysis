@@ -5,7 +5,7 @@ The Big Tech sector often provides high returns, but it is prone to extreme vola
 
 ##  TASK
 My goal was to move from a **Descriptive** analysis (what happened) to a **Prescriptive** strategy (how to fix it). I aimed to:
-1. ** Pinpoint specific assets contributing to disproportionate risk.
+1. Pinpoint specific assets contributing to disproportionate risk.
 2. **Mathematically Optimize:** Rebalance weights to maximize the **Sharpe Ratio** using Monte Carlo simulations.
 3. **Protect Capital:** Reduce the Maximum Drawdown to ensure capital preservation while maintaining competitive growth.
 
