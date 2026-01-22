@@ -1,4 +1,4 @@
-#  Tech-Portfolio-Analysis: From Risk-Heavy to Risk-Adjusted Growth
+#  Tech Portfolio Analysis: From Risk-Heavy to Risk-Adjusted Growth
 
 ##  SITUATION
 The Big Tech sector often provides high returns, but it is prone to extreme volatility and deep drawdowns. My initial analysis of an equal-weighted portfolio (**AAPL, AMZN, GOOGL, META, MSFT, NVDA, NFLX**) yielded a strong **29.21% annualized return** but was coupled with a dangerous **-49.09% Maximum Drawdown**. For most investors, a nearly 50% loss in capital is unacceptable, regardless of the upside.
@@ -22,11 +22,11 @@ The portfolio focuses on 7 major technology leaders with diverse growth and vola
 1. **Python (Core Engine):** Data manipulation and matrix mathematics.
 2. **Pandas & NumPy:** Financial time-series analysis and return calculations.
 3. **Matplotlib & Seaborn:** Visualizing the Efficient Frontier and Stock Correlations.
-4. **SciPy/Monte Carlo Simulation:** Running 2,000+ portfolio iterations to identify the optimal "Frontier."
+4. **SciPy/Monte Carlo Simulation:** Running 2,000+ portfolio iterations to identify the optimal Frontier.
 
 ##  ACTION
 1. **Data Engineering:** Pivoted raw data into a time-series format and calculated daily percentage changes.
-2. **Risk Assessment:** Conducted a correlation analysis to identify how these tech giants move in tandem.
+2. **Risk Assessment:** Conducted a correlation analysis to identify how these tech giants move together.
 3. **Trend Signal Development (Predictive):** Integrated 20-day and 50-day Moving Averages to identify Regime Shifts. I utilized these as predictive lead indicators to determine when momentum was exhausting and a defensive pivot was required.
 4. **Efficient Frontier Simulation:** Developed a Monte Carlo simulation to generate 2,000 random weight combinations.
 5. **Optimization:** Identified the **Maximum Sharpe Ratio** portfolio, the "North Star" where return-per-unit-of-risk is at its peak.
@@ -56,7 +56,7 @@ The portfolio focuses on 7 major technology leaders with diverse growth and vola
 
 ### 1. What led to the 0.96 Sharpe Ratio?
 * **The "Beta" Penalty:** The initial equal-weighted portfolio carried a high Beta (market sensitivity). Even with high gains, the quality of return was lower because the risk was uncompensated.
-* **Uncompensated Volatility:** A Sharpe Ratio < 1.0 means we earned less than 1% of "excess return" for every 1% of risk taken. It suggests the portfolio was not perfectly diversified.
+* **Uncompensated Volatility:** A Sharpe Ratio < 1.0 means we earned less than 1% of excess return for every 1% of risk taken. It suggests the portfolio was not perfectly diversified.
 * **The Drawdown Impact:** The massive -49.09% drawdown increased the standard deviation (the denominator of the Sharpe formula), mathematically lowering the score.
 
 ### 2. Rolling Volatility Trends
@@ -88,7 +88,7 @@ The Equal Weight portfolio sat deep inside the Monte Carlo "cloud." This represe
 
 ##  RECOMMENDATIONS: STRATEGIC ACTION PLAN
 
-1. **Immediate Rebalancing to Risk-Parity Weights:** Move away from equal dollar amounts. I recommend trimming high-beta stocks (NVDA) and increasing weights in lower-volatility anchors like **MSFT** or **AAPL** to protect against the 49% drawdown risk.
+1. **Immediate Rebalancing to Risk-Parity Weights:** Move away from equal dollar amounts. I recommend trimming high-beta stocks (NVDA) and increasing weights in lower-volatility tickers like **MSFT** or **AAPL** to protect against the 49% drawdown risk.
 2. **Adopt Tactical Trend Following:** Utilize the 20/50-day Moving Average crossovers. When a "Death Cross" occurs, the portfolio should rotate into cash or defensive ETFs to preserve capital.
 3. **Dynamic Exit for Low-Efficiency Assets:** Based on the 0.27% allocation recommendation for **META**, I recommend divesting from assets where the volatility does not justify the return, freeing up liquidity for higher-conviction drivers.
 4. **Diversification Beyond Tech:** To achieve a **Sharpe Ratio > 1.5**, the next phase must introduce non-correlated assets (e.g., Value stocks or Commodities) to further flatten the -28% drawdown curve.
